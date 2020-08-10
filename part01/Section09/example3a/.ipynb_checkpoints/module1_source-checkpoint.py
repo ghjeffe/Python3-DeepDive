@@ -5,14 +5,19 @@
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "print('Running module1.py')\n",
+    "\n",
+    "def hello():\n",
+    "    print('Module1 says hello')"
+   ]
   }
  ],
  "metadata": {
   "kernelspec": {
-   "display_name": "Python 3.7.7 64-bit",
+   "display_name": "Python 3",
    "language": "python",
-   "name": "python37764bitc3d19342ae664e2e98fd758d0770f36b"
+   "name": "python3"
   },
   "language_info": {
    "codemirror_mode": {
