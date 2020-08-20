@@ -88,3 +88,21 @@ class Polygon():
         else:
             return False
 
+
+class PolygonSequence():
+    def __init__(self, length):
+        self._length = length
+
+    @property
+    def length():
+        return self._length
+    
+    def __getitem__(self, index):
+        if isinstance(index, int):
+            if index < 0:
+                index = self.length + index
+            if index < 0 or index >= self.length:
+                raise IndexError
+
+    def __len__(self):
+        pass
