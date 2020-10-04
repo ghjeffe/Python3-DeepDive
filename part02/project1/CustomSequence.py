@@ -32,6 +32,9 @@ class Fib():
                 raise IndexError
             else:
                 return Fib._fib(s)
+        else:
+            start, stop, step = s.indices(self.n)
+            return [Fib._fib(i) for i in range(start, stop, step)]
 
     @staticmethod
     @lru_cache(2 ** 10)

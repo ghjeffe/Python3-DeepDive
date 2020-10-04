@@ -94,7 +94,7 @@ class PolygonSequence():
         self._length = length
 
     @property
-    def length():
+    def length(self):
         return self._length
     
     def __getitem__(self, index):
