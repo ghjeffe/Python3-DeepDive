@@ -2,7 +2,7 @@ import math
 
 NotImplementedErrorComparisonMessage = 'Comparison must be done between polygon objects'
 
-class Polygon():
+class Polygon:
     def __init__(self, edge_count, circumradius):
         if edge_count < 3:
             raise ValueError('Polygons must have at least 3 sides')
@@ -89,7 +89,7 @@ class Polygon():
             return False
 
 
-class PolygonSequence():
+class PolygonSequence:
     def __init__(self, length):
         self._length = length
 
